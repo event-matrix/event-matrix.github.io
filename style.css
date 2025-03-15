@@ -1,0 +1,87 @@
+/* 共通のスタイル */
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #f0f0f0;  /* 薄いグレー */
+  margin: 0;
+  padding: 0;
+  color: #333;  /* 文字色は濃いグレー */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 見出し */
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* イベントリスト（index.html用） */
+ul.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.event-list li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+ul.event-list li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+ul.event-list li a:hover {
+  background-color: #e0e0e0;
+}
+
+/* スケジュール部分をカード状に */
+.schedule-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 30px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* カード内の見出しの余白を調整 */
+.schedule-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.schedule-day {
+  margin-bottom: 20px;
+}
+
+.schedule-day p {
+  margin: 0 0 10px 0;
+}
+
+/* 中央寄せのリンク（トップページに戻るリンク用） */
+.center-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+}
