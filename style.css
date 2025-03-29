@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 800px; /* 最大幅を800pxに変更 */
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
@@ -68,6 +68,23 @@ ul.event-list li a:hover {
 
 .schedule-day p {
   margin: 0 0 10px 0;
+}
+
+/* テーブルスタイル */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.schedule-table thead th {
+  text-align: left;
+  background-color: #f9f9f9;
 }
 
 /* 中央寄せのリンク（トップページに戻るリンク用） */
